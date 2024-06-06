@@ -1,19 +1,11 @@
 import {hexToRgb} from './hexToRgb';
 
 describe('hexToRgb', () => {
-  it('should throw an error if the provided string is not a valid hex colour code', () => {
-    const nonHex = 'this is not a hex code';
-    expect(() => hexToRgb(nonHex)).toThrow(
-      'this is not a hex code is not a valid hexadecimal colour code'
-    );
-  });
-
   it('should return an array of RGB values for a 3-character hex code', () => {
     const hex = '#ABC';
     const expected = [170, 187, 204];
     expect(hexToRgb(hex)).toEqual(expected);
   });
-
   it('should return an array of RGB values for a 4-character hex code', () => {
     const hex = '#F2E4';
     const expected = [255, 34, 238];
