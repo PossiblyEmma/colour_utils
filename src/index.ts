@@ -1,3 +1,4 @@
+export {getContrastRatio} from './getContrastRatio/getContrastRatio';
 export {getRelativeLuminance} from './getRelativeLuminance/getRelativeLuminance';
 export {hexToRgb} from './hexToRgb/hexToRgb';
 export {hexToRgba} from './hexToRgba/hexToRgba';
